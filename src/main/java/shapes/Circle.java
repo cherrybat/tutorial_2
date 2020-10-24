@@ -1,15 +1,16 @@
+package shapes;
+
 import java.awt.*;
 
-public class Circle{
+public class Circle extends Shape{
     private int rad;
-    private Point pos;
-    private Color col;
+
     // Fields
 
     public Circle(Point initPos, Color col, int radius) { // The constructor
+        super(initPos, col);
         rad=radius;
-        pos=initPos;
-        this.col=col;//the parameter 'col' here is the same name as the Field 'col', so we
+        //the parameter 'col' here is the same name as the Field 'col', so we
         //put this to identify the parameter here.
     }
 
